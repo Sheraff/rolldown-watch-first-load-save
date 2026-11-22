@@ -1,0 +1,15 @@
+{
+  "name": "rolldown-watch-first-load-save",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "repro": "node repro.mjs",
+    "control": "node repro.mjs control",
+    "first-build": "node repro.mjs first-build",
+    "vite": "node vite.mjs"
+  },
+  "devDependencies": {
+    "rolldown": "1.3.3",
+    "vite": "8.3.8"
+  }
+}
