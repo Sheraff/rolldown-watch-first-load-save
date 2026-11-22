@@ -1,6 +1,6 @@
 # Rolldown watch: a file saved during the build that first loads it is not rebuilt
 
-Reproduction for <!-- rolldown#10935 comment link once posted -->.
+Reproduction for [rolldown/rolldown#10935 (comment)](https://github.com/rolldown/rolldown/issues/10935#issuecomment-7081375341).
 
 `repro.mjs` runs `rolldown.watch()` on `src/main.js`. After the first build, `main.js` starts importing
 `src/new.js`. A plugin saves `new.js` (`'OLD'` → `'NEW'`) right after the second build read it, as an editor save
